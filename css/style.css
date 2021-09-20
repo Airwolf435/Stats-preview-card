@@ -1,0 +1,51 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    text-align: center;
+}
+
+b {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats-card {
+    background-color: hsl(244, 38%, 16%);
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "info info img";
+}
+
+.stats-data {
+    display: inline;
+    grid-area: info;
+}
+
+.statistics {
+    grid-template-areas: "1 2 3";
+    display: grid;
+}
+.stats {
+    display: block;
+}
+.stats-1 {
+    grid-area: 1;
+}
+.stats-2 {
+    grid-area: 2;
+}
+.stats-3 {
+    grid-area: 3;
+}
+.stats-image {
+    grid-area: img;
+    background-clip: border-box;
+    background-color: hsl(277, 64%, 61%);
+    display: inline;
+    filter: brightness(50%) sepia(1) hue-rotate(239deg) saturate(60%);
+}
+
+.stats-image img {
+    height: 100%;
+    width: 100%;
+}
